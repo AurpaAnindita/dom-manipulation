@@ -3,6 +3,7 @@ var heading = document.getElementById('heading')
 console.log(heading.innerText)
 
 /* Task 2 using plain JavaScript */
+//Task 2a
 var textBtn = document.getElementById('textBtn2')
 textBtn.addEventListener('click',function()
 {
@@ -25,6 +26,7 @@ function changeBGcolor(event)
         body.style.backgroundColor = 'green'
     }
 }
+
 //Task 2c
 function redirectToGoogle()
 {
@@ -33,3 +35,9 @@ function redirectToGoogle()
 
 
 /* Task 4 using jQuery */
+// Task 4a
+$('#addText4').click(function(event)
+{
+    var paragraph = $('<p>').text('Hello World')
+    $('#task4a').append(paragraph);
+})
